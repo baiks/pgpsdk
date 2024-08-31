@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  pgpSDK:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pgpsdk
+    container_name: pgpsdk
+    ports:
+      - "8081:8081"
